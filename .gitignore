@@ -1,2 +1,9 @@
 data eng stuff.txt
 test/
+*.parquet
+*.csv
+.venv
+.ipynb_checkpoints
+1-docker-terraflow/ingestion.ipynb
+terraform.exe
+*.tar.gz
