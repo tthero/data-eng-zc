@@ -2,8 +2,11 @@ data eng stuff.txt
 test/
 *.parquet
 *.csv
+*.tar
 .venv
 .ipynb_checkpoints
 1-docker-terraflow/ingestion.ipynb
 terraform.exe
-*.tar.gz
+2-workflow-orchestration/flows
+2-workflow-orchestration/homework/attempts.sql
+credentials/
