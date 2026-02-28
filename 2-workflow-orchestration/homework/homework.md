@@ -1,6 +1,6 @@
 # Question 1. 
 Within the execution for Yellow Taxi data for the year 2020 and month 12: what is the uncompressed file size (i.e. the output file yellow_tripdata_2020-12.csv of the extract task)? 
-- 134.5 MB or 128.3 MiB after 
+- 134.5 MB or 128.3 MiB after `gunzip`
 - MB is megabytes, while MiB is mebibytes (1,024,576 bytes)
 
 # Question 2. 
@@ -10,14 +10,23 @@ What is the rendered value of the variable file when the inputs taxi is set to g
 
 # Question 3. 
 How many rows are there for the Yellow Taxi data for all CSV files in the year 2020?
+```sql
+SELECT SUM(total_rows) FROM `zoomcamp.INFORMATION_SCHEMA.PARTITIONS` WHERE table_name LIKE 'yellow_tripdata_2020_%'
+```
 - 24,648,499
 
 # Question 4. 
 How many rows are there for the Green Taxi data for all CSV files in the year 2020?
+```sql
+SELECT SUM(total_rows) FROM `zoomcamp.INFORMATION_SCHEMA.PARTITIONS` WHERE table_name LIKE 'green_tripdata_2020_%'
+```
 - 1,734,051
 
 # Question 5. 
 How many rows are there for the Yellow Taxi data for the March 2021 CSV file?
+```sql
+SELECT total_rows FROM `zoomcamp.INFORMATION_SCHEMA.PARTITIONS` WHERE table_name LIKE 'yellow_tripdata_2021_03'
+```
 - 1,925,152
 
 # Question 6. 
