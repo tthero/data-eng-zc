@@ -87,4 +87,4 @@ It is recommended by Google Cloud that clustering can be the first step to impro
 
 # Question 9. Understanding table scans
 No Points: Write a SELECT count(*) query FROM the materialized table you created. How many bytes does it estimate will be read? Why?
-0 bytes, possibly due to the COUNT function
+0 bytes, possibly due to the materialized table already precomputed the results, but that is only if the query is about the aggregation, filter and join operations.

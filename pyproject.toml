@@ -1,0 +1,7 @@
+[project]
+name = "data-eng-zc"
+version = "0.1.0"
+description = "My own Data Engineering Zoomcamp Python project environment for UV"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
